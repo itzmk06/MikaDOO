@@ -1,0 +1,569 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width:100%;
+    font-family: "Handlee", cursive;
+    background-color: #F8F8F8;
+}
+#main{
+    width:100%;
+    height: 100%;
+    padding: 0.1px;
+    /* background-color: skyblue; */
+    position: relative;
+}
+#nav{
+    margin-top: 4.5vh;
+    width:100%;
+    height: 5vw;
+    /* background-color: greenyellow; */
+    position: relative;
+}
+#nav1{
+    width: 25vw;
+    height: 4.5vw;
+    /* background-color: coral; */
+    position: relative;
+}
+#nav1 h1{
+    letter-spacing: 0.0001vh;
+    border-left: 0.;
+    position: relative;
+    padding: 0vw 7vw;
+    font-weight: 600;
+    font-size: 9vh;
+    top: -2.5vh;
+    font-family: "Protest Riot", sans-serif;
+}
+#nav2{
+    padding: 0.001vh;
+    /* border-top: 0.5vh solid black; */
+    /* border-bottom: 0.5vh solid black; */
+    position: relative;
+    display: flex;
+    gap: 18.8vh;
+    font-weight: 500;
+    /* right: -10vh; */
+    justify-content: flex-end;
+    align-content: flex-end;
+    top: -12vh;
+}
+#nav2 h3,img::before{
+    /* border-left: 0.5vh solid black; */
+    height: 13vh;
+}
+#nav2 h3,img{
+    padding: 4.5vh;
+}
+#trade{
+    font-family: "Handlee", cursive;
+    font-weight: 600;
+    font-size: 4vh;
+}
+#nav1 sub{
+    font-family: "Handlee",cursive;
+    font-size: 2vh;
+    right: 5vh;
+    position: absolute;
+    top: 10vh;
+
+}
+#videoContent video{
+    /* background-color: yellow; */
+    width: 80%;
+    height: 30%;
+    padding: 5vh 10vh 0vh 10vh;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    position: relative;
+    left: 23vh;
+}
+#videoContent h3{
+    font-size: 5vh;
+    display: flex;
+    font-family: "Protest Riot", sans-serif;
+    color: white;
+    font-weight: 100;
+    padding: 0vh 39vh;
+    position: relative;
+    bottom: 30vh;
+    mix-blend-mode: difference;
+}
+#videoContent h3::before{
+    content: " ";
+    width: 141.20vh;
+    mix-blend-mode: difference;
+    height: 0.5vh;
+    background-color: white;
+    position: absolute;
+    top: 13vh;
+    justify-content: center;
+    left: 35vh;
+}
+#videoContent h3::after{
+    content: "Explore";
+    width: 141.20vh;
+    height: 0.5vh;
+    mix-blend-mode: difference;
+    position: absolute;
+    /* color: black; */
+    font-size: 3vh;
+    top: 14vh;
+    justify-content: center;
+    left: 40vh;
+}
+#scroll{
+    width: 100%;
+    height: 40vh;
+    padding: 0vh;
+    gap: 40vh;
+    /* background-color: blue; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scroll::-webkit-scrollbar{
+    display: none;
+}
+#container1{
+    display: inline-block;
+    width: 105%;
+    height: 110%;
+    /* background-color: orangered; */
+    animation-name: move;
+    animation-duration: 20s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: ease all 2s;
+}
+#container2{
+    display: inline-block;
+    width: 107%;
+    padding: 0vh 4.5vh;
+    height: 110%;
+    /* background-color: rgb(0, 255, 136); */
+    animation-name: move;
+    animation-duration: 20s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: ease all 2s;
+}
+#scroll img{
+    object-fit: cover;
+    height: 31vh;
+    width:31vh;
+    object-position: top;
+    border-radius: 50%;
+}
+
+@keyframes move {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(calc(-100% + (4px )));
+    }
+}
+#page2{
+    /* background-color: skyblue; */
+    margin-top:6vh;
+    height:100%;
+    width: 100%;
+    position: relative;
+}
+#page2 #img1{
+    object-fit: cover;
+    width: 40%;
+    height: 90%;
+    padding: 3vh 5vh 3vh 15vh;
+    border-radius: 90%;
+}
+#page2 #img2{
+    position: absolute;
+    border-radius: 30%;
+    object-fit: cover;
+    width: 35%;
+    right: 56vh;
+    bottom: 8.5vh;
+    height: 93%;
+}
+#page2 h3{
+    padding: 6vh 4vh 0vh 22vh;
+    font-size: 8vh;
+    font-weight: 500;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 600;
+    color:orangered;
+}
+#page2 #p1{
+    position: absolute;
+    justify-items: flex-end;
+    align-items: flex-end;
+    left:150vh;
+    right: 0vh;
+    top:2.5vh;
+    padding: 0.9vh 1vh;
+    font-size:3vh;
+}
+#page3{
+    margin-top: 10vh;
+    width: 100%;
+    height: 100%;
+    padding: 20vh;
+    /* background-color: skyblue; */
+}
+#page3 #monogram{
+    position: absolute;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 70%;
+    /* rotate:360deg; */
+    animation-name: rotate1;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate1 {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: calc(360deg - 2deg);
+    }
+}
+#img3{
+    object-fit: cover;
+    height: 100vh;
+    object-position: center;
+    position: relative;
+    border-radius: 30%;
+    width:90vh;
+    top:-19.5vh;
+    left: 70vh;
+}
+#page4{
+    padding: 0.01vh;
+    width:100%;
+    height: 100%;
+    position: relative;
+    margin-top: 10vh;
+}
+#page4 h2{
+    color: orangered;
+    font-family: "Protest Riot", sans-serif;
+    z-index: -1;
+    font-size: 8vh;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left:79vh;
+    padding: 5vh;
+    text-transform: uppercase;
+    /* font-weight: 400; */
+    margin-bottom: 9vh;
+}
+.elm{
+    cursor: pointer;
+    top:10vh;
+    left: 30vh;
+    margin-top: 8vh;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 17vh;
+    padding: 5vh 0vh;
+    position: relative;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+}
+.elm::before{
+    content:" ";
+    width:100%;
+    position: absolute;
+    /* border-top: 0.5vh solid black; */
+}
+#h31{
+    position: relative;
+    width: 10px;
+    top:9vh;
+    left: 13vh;
+}
+.elm #block{
+    position: relative;
+    font-size: 3vh;
+    top: 9vh;
+    right: 20vh;
+}
+.elm img{
+    margin-top: 10px;
+    padding: 4.5vh;
+    position: relative;
+    width: 28vh;
+    height: 28vh;
+    top: 10vh;
+    left:6vh;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    transition: all ease 1ms;
+}
+.elm:hover{
+    animation-name: enlarge;
+    /* background-color: #b6b6b6; */
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+@keyframes enlarge {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+#page5{
+    padding: 0.1vh;
+    margin-top: 10vh;
+    width:100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    /* background-color: skyblue; */
+}
+#part1{
+    margin-top: 1vh;
+    position: relative;
+    width: 110vh;
+    height: 100vh;
+    /* background-color: greenyellow; */
+}
+#part2{
+    position: relative;
+    width: 110vh;
+    height: 100vh;
+    /* background-color: rgb(247, 0, 255); */
+}
+#part1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30%;
+    object-fit: cover;
+    object-position: 10 10;
+}
+#part2 img{
+    margin-top: 5vh;
+    position: relative;
+    width: 50vh;
+    gap: 10vh;
+    height: 70%;
+    border-radius: 30%;
+    object-fit: cover;
+    object-position: 10 10;
+}
+#part2 h1{
+    text-transform: uppercase;
+    color: orangered;
+    margin-top: 2vh;
+    position: relative;
+    font-family: "Protest Riot", sans-serif;
+    font-size: 8vh;
+}
+#part2 p{
+    font-weight: 600;
+    font-size: 3.5vh;
+}
+#page6{
+    padding: 0.01vh;
+    margin-top: 10vh;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+    /* background-color: skyblue; */
+}
+/* #page6 #img1{
+    width: 130vh;
+    height: 70vh;
+    object-fit: cover;
+    position: relative;
+    justify-items: center;
+    left: 36vh;
+    border-radius: 50%;
+    object-position: 2px 2px;    
+} */
+#page6 #part3{
+    width: 100%;
+    height: calc(100%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#page6 #part3 img{
+    border-radius: 30%;
+    width: 100vh;
+    padding-left: 33vh;
+    height: 90vh;
+    object-fit: cover;
+    object-position: top;
+}
+#her{
+    height: 10vh;
+    object-position: center;
+}
+#page6 #part3 p{
+    font-size: 3vh;
+    display: flex;
+    position: relative;
+    font-weight: 600;
+    padding-top: 30vh;
+    padding-right: 31vh;
+}
+#marque{
+    flex-wrap: nowrap;
+    padding: 0.1vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    gap: 5vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    /* background-color: skyblue;   */
+}
+#marque h1{
+    margin-top: 3vh;
+    align-items: center;
+    justify-self: center;
+    flex-shrink: 0;
+    color: #4b4a4a;
+    -webkit-text-stroke-color:black;
+    -webkit-text-stroke-width:0.2vh;
+    letter-spacing: 0.5vh;
+    font-weight: 5000;
+    font-size: 7vh;
+    text-transform: uppercase;
+    font-family: "Protest Riot", sans-serif;
+    animation-name: travel;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes travel {
+    from{
+        transform: translatex(calc(-100% - (4px + 5vh)));
+    }to{
+        transform: translatex(calc(0%));
+    }
+}
+#page7{
+    padding: 0.1vh;
+    margin-top: 10vh;
+    width: 100%;
+    gap: 10vh;
+    height: 100%;
+    /* background-color: skyblue; */
+}
+#blog{
+    font-family: "Protest Riot", sans-serif;
+    font-size: 8vh;
+    margin: 10vh;
+    position: relative;
+    display: flex;
+    color: orangered;
+    gap: 50vh;
+}
+#content1{
+    bottom: 20vh;
+    left: 50vh;
+    position: relative;
+    width:70vh;
+    height: 90vh;
+    justify-content: center;
+    align-content: center;
+    display: inline-block;
+    /* background-color: yellowgreen; */
+}
+#content2{
+    padding: 0.01vh;
+    bottom: 20vh;
+    left: 50vh;
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    width:70vh;
+    height: 90vh;
+    /* background-color: rgb(255, 131, 73); */
+}
+#p7{
+    font-size: 2.5vh;
+    position: relative;
+    top: 2.5vh;
+    font-weight: 400;
+    padding: 3vh;
+}
+#page7 img{
+    width: 90%;
+    height: 90%;
+    left: 4.5vh;
+    bottom: 3vh;
+    justify-items:  center;
+    position: relative;
+    border-radius: 30%;
+    object-fit: cover;
+    object-position: top;
+}
+#footer{
+    position: relative;
+    bottom: -18vh;
+    background-color: #b6b6b6;
+    width:100%;
+    height: 10vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* background-color: skyblue; */
+}
+#footer h1{
+    left: 70vh;
+    bottom: 1vh;
+    position: relative;
+    letter-spacing: 0.0001vh;
+    border-left: 0.;
+    position: relative;
+    padding: 0vw 7vw;
+    font-weight: 600;
+    font-size: 5vh;
+    position: relative;
+    justify-content: center;
+    font-family: "Protest Riot", sans-serif;
+}
+#footer sub{
+    font-family: "Handlee",cursive;
+    font-size: 2vh;
+    left: 20vh;
+    position: absolute;
+    bottom: -3vh;
+}
+#footer h4{
+    bottom: 4vh;
+    position: relative;
+    left: 110vh;
+}
+
+#page7 p{
+    font-weight: 900;
+}
